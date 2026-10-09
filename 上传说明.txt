@@ -1,0 +1,22 @@
+GitHub 上传内容
+
+请把本文件夹里的全部内容一起上传到 GitHub 仓库根目录：
+
+1. index.html
+2. meituan-flash-logo.png
+3. promo-logos 文件夹（10 个站内活动 Logo、2 个闪购活动 Logo）
+4. external-logos 文件夹（61 个站外 Logo、manifest.json 和本地预览用的 manifest.js）
+
+不要只上传 index.html，否则 Logo 素材无法显示。
+不要上传原项目中的 node_modules、.git、临时文件、预览截图或其他项目素材。
+
+如使用 GitHub Pages，请在仓库 Settings > Pages 中选择从当前分支根目录发布。
+
+本地预览：保持上述目录结构不变，直接双击 index.html 即可打开，素材库可以正常读取。
+
+站外 Logo 上传规范：
+- 仅支持“横版图形 Logo + 品牌名”或“方形图形 Logo”。
+- 横版图片宽高比至少为 1.8:1；方形图片宽高比需接近 1:1。
+- 图片尺寸不得低于 160×80px，建议优先使用透明底 PNG、WebP 或 SVG。
+- 不要上传上下排版、多行文字或内容被裁切的 Logo。
+- 业务上传时请先把文件名改成品牌名；上传后会自动加入对应素材库，同名品牌会覆盖旧版本。

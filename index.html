@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>会场搭建 Logo 配置</title>
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#05060a;color:#f3f4f8;font-family:Inter,"PingFang SC","Microsoft YaHei",Arial,sans-serif}button{font:inherit;cursor:pointer}.topbar{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid #151822;background:#090a10}.nav,.actions{display:flex;align-items:center;gap:12px}.nav button,.actions button{height:38px;border:0;background:transparent;color:#8f93a2;font-size:14px;font-weight:700}.nav button{display:flex;align-items:center;gap:6px;padding:0 12px}.nav .home{margin-right:24px;padding-right:28px;border-right:1px solid #1b1e28;color:#6e7280}.nav .active{color:#eef0f8}.actions button:not(.sun){min-width:88px;padding:0 18px;border:1px solid #252833;border-radius:14px;background:#151722;color:#c7cad6}.actions .sun{width:38px}.actions .download{min-width:172px;border-color:#ffcb21;background:#ffc31a;color:#161104;box-shadow:0 8px 24px #ffc31a24}.grid{height:calc(100vh - 72px);min-height:760px;display:grid;grid-template-columns:330px 290px minmax(560px,1fr) 520px}.components,.layers,.inspector{background:#090a10}.components{padding:22px 28px;border-right:1px solid #1b1e28}.components h2,.inspector h2{margin:0 0 20px;color:#aeb2c1;font-size:16px}.component-list{display:grid;gap:17px}.component-row{min-height:44px;display:grid;grid-template-columns:24px 1fr auto;align-items:center;gap:12px;color:#8f94a5;font-size:15px;font-weight:700}.component-row i{font-style:normal;color:#7b8090;font-size:18px}.component-row button{height:28px;padding:0 12px;border:1px solid #303442;border-radius:8px;background:#171925;color:#eef0f8;font-size:13px;font-weight:800}.layers{padding:22px 14px;border-right:1px solid #171a24}.layer-title{margin:0 0 14px 8px;color:#777c8b;font-size:14px;font-weight:700}.layer-card{min-height:68px;display:grid;gap:6px;margin-bottom:8px;padding:14px 16px;border:1px solid #242732;border-radius:8px;background:#191b24;color:#d7d9e5}.layer-card span{display:block;color:#7d8290;font-size:13px}.layer-card.muted{grid-template-columns:1fr auto;align-items:center;background:#12141c;color:#555b68}.layer-card.muted em{width:38px;height:22px;border-radius:999px;background:#282b35}.layer-card.active{border-color:#353844;background:#1d1f28}.layers p{margin:26px 0 0 12px;color:#4e5360;font-size:14px;line-height:1.7}.stage{position:relative;display:grid;place-items:center;padding:56px 44px 34px;overflow:hidden;background-color:#05060a;background-image:radial-gradient(#1a1d27 1px,transparent 1px);background-size:24px 24px}.scene-tabs{position:absolute;top:16px;left:28px;display:flex;gap:14px}.scene-tabs button{height:34px;border:0;border-radius:10px;padding:0 14px;background:transparent;color:#636877;font-size:14px;font-weight:800}.scene-tabs .active{background:#171924;color:#eef0f7}.current{position:absolute;top:24px;right:36px;color:#626776;font-size:14px;font-weight:700}.theme{position:absolute;top:70px;left:50%;height:34px;transform:translateX(-50%);border:1px solid #d9d0a8;border-radius:10px;padding:0 16px;background:#2a2619;color:#fff3cb;font-size:13px;font-weight:800}.phone{position:relative;width:432px;height:850px;overflow:hidden;border-radius:26px 26px 0 0;background:#ffcfec;box-shadow:0 34px 80px #000b}.status{position:absolute;z-index:5;top:0;left:0;width:100%;height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 34px 0 40px;color:#0d0e12;font-size:15px;font-weight:900}.hero{position:relative;height:248px;overflow:hidden;background:#ffd3e7 url("/venue-content.png") center top/cover no-repeat}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#ffd5e7 0%,#ffd5e7 29%,rgba(255,213,231,.08) 68%,rgba(255,213,231,0) 100%)}.back,.share{position:absolute;z-index:4;top:77px;width:28px;height:28px;display:grid;place-items:center;border:0;background:transparent;color:#08090b;font-size:31px;line-height:1}.back{left:12px}.share{right:18px;font-size:27px}.logo-pill{position:absolute;z-index:4;top:76px;left:42px;height:38px;display:inline-flex;align-items:center;gap:10px;padding:0 16px;border-radius:12px;background:#fff;box-shadow:0 1px 3px #00000012}.logo-pill.outside{opacity:.62}.flash-logo{width:auto;height:19px;object-fit:contain}.activity-logo{width:auto;max-width:104px;height:19px;object-fit:contain}.hero-copy{position:absolute;z-index:3;left:36px;top:116px;display:grid;color:#ff2476;font-size:33px;line-height:1.12;font-weight:900}.content{position:relative;height:calc(100% - 248px);padding-top:42px;text-align:center;color:#cf95b7;font-size:13px;font-weight:700;background:#ffcfec}.content .tag{position:absolute;top:-11px;left:0;height:22px;display:grid;place-items:center;padding:0 9px;border-radius:0 4px 4px 0;background:#fff;color:#252631;font-size:12px}.zoom{position:absolute;bottom:4px;display:grid;grid-template-columns:34px 70px 34px;height:32px;overflow:hidden;border-radius:8px 8px 0 0;background:#10121a;color:#b9bdc9}.zoom button{border:0;background:#151824;color:#777d8d;font-size:20px}.zoom span{display:grid;place-items:center;font-size:14px;font-weight:800}.inspector{padding:18px;overflow:auto;border-left:1px solid #171a24}.section{margin-bottom:12px;padding:18px;border-radius:26px;background:#0c0d13}.segmented{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-bottom:14px;padding:5px;border-radius:13px;background:#1b1d27}.segmented button{height:40px;border:0;border-radius:10px;background:transparent;color:#777b89;font-size:15px;font-weight:900}.segmented .active{background:#090a10;color:#f5f6fa}.segmented button:disabled{cursor:not-allowed;opacity:.46}.colors{display:flex;flex-wrap:wrap;gap:9px}.colors button{height:35px;display:flex;align-items:center;gap:7px;border:0;border-radius:8px;padding:0 12px;background:#191b25;color:#9ba0ae;font-size:13px;font-weight:800}.colors .active{background:#fff;color:#101116}.colors i{width:12px;height:12px;border-radius:50%}.muted{margin:12px 0 0;color:#666b79;font-size:14px;font-weight:700}.muted b{color:#f6f7fb}.row{min-height:48px;display:flex;align-items:center;justify-content:space-between;color:#bec2cf;font-size:15px;font-weight:900}.row:before{content:"";width:6px;height:6px;margin-right:12px;border-radius:50%;background:#2d303c}.row.blue:before{background:#3388ff}.row span{margin-right:auto}.row button{height:28px;border:0;border-radius:7px;padding:0 9px;background:#171923;color:#787d8b;font-size:12px;font-weight:800}.switch-line{display:flex;align-items:center;justify-content:space-between;margin:2px 0 14px;color:#8d93a2;font-size:14px;font-weight:800}.switch{width:50px;height:28px;border:0;border-radius:999px;padding:3px;background:#303442}.switch i{display:block;width:22px;height:22px;border-radius:50%;background:#fff;transition:transform .18s}.switch.on{background:#5a4df5}.switch.on i{transform:translateX(22px)}.placement,.source-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}.source-tabs{grid-template-columns:1fr 1fr}.placement button,.source-tabs button{height:38px;border:1px solid #3a3e4d;border-radius:7px;background:#0d0f16;color:#777d8b;font-size:14px;font-weight:900}.placement .active{border-color:#fff;background:#fff;color:#111219}.placement button:disabled{opacity:.45;cursor:not-allowed}.source-tabs .active{border-color:#5a50f1;background:#4e45dc;color:#fff}.source-tabs input{display:none}.spec{display:grid;gap:4px;margin:8px 0 14px;padding:12px;border:1px solid #242733;border-radius:10px;background:#11131a}.spec span,.spec small{color:#737887;font-size:12px;font-weight:700}.spec b{color:#f0f2f8;font-size:14px}.library-head{display:flex;justify-content:space-between;margin-bottom:10px;color:#767b8a;font-size:13px;font-weight:800}.library-head b{max-width:180px;overflow:hidden;color:#dfe2ed;text-overflow:ellipsis;white-space:nowrap}.library-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.library-grid button{height:54px;display:grid;place-items:center;border:1px solid #292d39;border-radius:10px;background:#fff;padding:8px}.library-grid .active{border-color:#5c52ff;box-shadow:0 0 0 2px #5c52ff66}.library-grid img{max-width:100%;max-height:34px;object-fit:contain}@media(max-width:1400px){.grid{grid-template-columns:250px 220px minmax(480px,1fr) 400px}.components{padding-inline:18px}.phone{transform:scale(.86)}}@media(max-width:980px){body{overflow:auto}.topbar,.grid{min-width:980px}}
+    .stage .logo-pill{position:static;width:max-content;max-width:100%;box-shadow:0 10px 30px #0008}
+    .stage .logo-pill{transform:scale(var(--preview-scale,1));transform-origin:center;transition:transform .18s ease}
+    .preview-zoom{position:absolute;z-index:5;top:16px;left:50%;display:grid;grid-template-columns:repeat(4,58px);gap:4px;transform:translateX(-50%);padding:4px;border:1px solid #252936;border-radius:8px;background:#10121a;box-shadow:0 8px 24px #0005}
+    .preview-zoom button{height:30px;border:0;border-radius:5px;background:transparent;color:#858b9a;font-size:12px;font-weight:800}
+    .preview-zoom button:hover{color:#f1f3f8;background:#1b1e28}
+    .preview-zoom button.active{background:#fff;color:#15161c}
+    .logo-pill{border-radius:8px}
+    .flash-logo,.activity-logo{display:block;width:auto;max-width:none;object-fit:contain}
+    .flash-logo{height:20px}
+    .logo-divider{display:none;flex:0 0 0.4px;width:0.4px;height:20px;background:#000}
+    .logo-pill[data-mode="external"] .logo-divider{display:block}
+    .activity-logo{height:14px}
+    .logo-pill[data-mode="flash"] .activity-logo,.logo-pill[data-mode="flash"] .external-placeholder,.logo-pill:not([data-mode="external"]) .external-placeholder,.logo-pill[data-mode="external"]:not(.awaiting-external) .external-placeholder,.logo-pill[data-mode="external"].awaiting-external .activity-logo{display:none}
+    .external-placeholder{color:#969ba7;font-size:12px;font-weight:700;white-space:nowrap}
+    .library-summary img[hidden]{display:none}
+    .logo-pill.outside{opacity:1}
+    .logo-controls[hidden]{display:none}
+    .external-size[hidden]{display:none}
+    .external-size{height:42px;display:flex;align-items:center;justify-content:space-between;margin:0 0 14px;padding:0 12px;border:1px solid #292d39;border-radius:8px;background:#11131a;color:#8f94a3;font-size:13px;font-weight:800}
+    .logo-stepper{display:grid;grid-template-columns:34px 54px 34px;height:30px;overflow:hidden;border:1px solid #373b49;border-radius:7px;background:#0b0d13}
+    .logo-stepper button{border:0;background:transparent;color:#dfe2eb;font-size:18px;font-weight:800}
+    .logo-stepper button:hover{background:#242733}
+    .logo-stepper output{display:grid;place-items:center;border-inline:1px solid #373b49;color:#fff;font-size:12px}
+    .grid{grid-template-columns:260px minmax(500px,1fr) 520px}
+    .component-row.single{grid-template-columns:24px 1fr;padding:0 12px;border:1px solid #303442;border-radius:8px;background:#1d1f28;color:#eef0f8}
+    @media(max-width:1400px){.grid{grid-template-columns:220px minmax(420px,1fr) 400px}}
+    .library-summary{width:100%;height:42px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;border:1px solid #303442;border-radius:8px;background:#171925;color:#dfe2ed;font-size:13px;font-weight:800}
+    .library-summary img{max-width:140px;max-height:23px;object-fit:contain}
+    .library-summary span{color:#8b90a0}
+    .library-overlay{position:fixed;z-index:30;inset:0;display:none;align-items:center;justify-content:center;padding:5vh 4vw;background:#000a;backdrop-filter:blur(5px)}
+    .library-overlay.open{display:flex}
+    .library-modal{width:min(1800px,100%);height:min(1090px,90vh);display:flex;flex-direction:column;overflow:hidden;border:1px solid #e4e6ed;border-radius:16px;background:#f9faff;color:#222733;box-shadow:0 24px 80px #0007}
+    .modal-titlebar{min-height:82px;display:flex;align-items:center;justify-content:space-between;padding:0 28px;border-bottom:1px solid #e9eaf0;font-size:18px;font-weight:800}
+    .modal-titlebar small{color:#7c8290;font-size:16px;font-weight:400}
+    .modal-close{width:42px;height:42px;border:1px solid #d9dce5;border-radius:10px;background:#f2f3f8;color:#454b59;font-size:24px}
+    .modal-toolbar{min-height:80px;display:flex;align-items:center;gap:16px;padding:0 26px;border-bottom:1px solid #e9eaf0}
+    .modal-search{width:min(410px,55vw);height:46px;border:1px solid #d9dce5;border-radius:10px;background:#fff;padding:0 16px;color:#232936;font:inherit;font-size:15px;outline:none}
+    .modal-search:focus{border-color:#5146d8;box-shadow:0 0 0 3px #5146d822}
+    .modal-upload{height:46px;border:1px solid #c5c9d4;border-radius:10px;background:#fff;padding:0 18px;color:#252b37;font-weight:800}
+    .modal-results{flex:1;overflow:auto;padding:22px 26px}
+    .modal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));align-content:start;gap:18px}
+    .material-card{height:220px;display:flex;flex-direction:column;overflow:hidden;border:1px solid #d9dce6;border-radius:13px;background:#fff;padding:0;text-align:left;color:#20242f}
+    .material-card:hover,.material-card:focus-visible{border-color:#5146d8;box-shadow:0 0 0 2px #5146d822;outline:none}
+    .material-card.selected{border-color:#5146d8;box-shadow:0 0 0 2px #5146d8}
+    .material-image{flex:1;min-height:0;display:grid;place-items:center;padding:16px;background:#eceef4}
+    .material-image img{display:block;max-width:100%;max-height:110px;object-fit:contain}
+    .material-image img{max-width:none;max-height:none}
+    .material-name{height:42px;display:flex;align-items:center;padding:0 13px;font-size:14px;font-weight:700}
+    .modal-footer{min-height:54px;border-top:1px solid #e9eaf0;padding:14px 26px;color:#777d8a;font-size:14px}
+    .modal-empty{display:none;padding:60px 20px;text-align:center;color:#8a90a0}
+    @media(max-width:700px){.library-overlay{padding:14px}.library-modal{height:calc(100vh - 28px)}.modal-toolbar{padding:0 14px}.modal-titlebar{padding:0 14px}.modal-results{padding:14px}.modal-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.material-card{height:170px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav">
+      <button class="home">⌂ <span>首页</span></button>
+      <button class="active">会场搭建 <span>⌄</span></button>
+    </nav>
+  </header>
+  <main class="grid">
+    <aside class="components">
+      <h2>组件目录</h2>
+      <div class="component-list"><div class="component-row single"><i>▣</i><span>头图 Logo</span></div></div>
+    </aside>
+    <section class="stage">
+      <div class="scene-tabs"><button class="active">● 会场 1 <span>×</span></button></div>
+      <div class="preview-zoom" id="preview-zoom" aria-label="预览缩放比例">
+        <button data-scale="0.65">65%</button>
+        <button data-scale="0.85">85%</button>
+        <button class="active" data-scale="1">100%</button>
+        <button data-scale="1.2">120%</button>
+      </div>
+      <div class="logo-pill" id="logo-pill" data-mode="site">
+        <img class="flash-logo" src="./meituan-flash-logo.png" alt="美团闪购">
+        <span class="logo-divider" aria-hidden="true"></span>
+        <img class="activity-logo" id="activity-logo" src="./promo-logos/踏青上美团.png" alt="活动 Logo">
+        <span class="external-placeholder">待上传站外 Logo</span>
+      </div>
+    </section>
+    <aside class="inspector">
+      <section class="section">
+        <div class="row blue"><span>Logo</span><button id="placement-label">站内⌄</button></div>
+        <div class="switch-line"><span>显示</span><button class="switch on" id="switch" aria-label="切换 Logo 显示"><i></i></button></div>
+        <div class="placement" id="logo-placement">
+          <button data-place="flash">闪购</button>
+          <button class="active" data-place="site">站内</button>
+          <button data-place="external">站外</button>
+        </div>
+        <div class="logo-controls" id="logo-controls">
+          <div class="source-tabs">
+            <button id="upload-tab">⇧ 上传</button>
+            <button class="active" id="library-tab">＋ 素材库</button>
+            <input id="upload" type="file" accept="image/png,image/jpeg,image/webp,image/svg+xml">
+          </div>
+          <div class="external-size" id="external-size" hidden>
+            <span>Logo 大小</span>
+            <div class="logo-stepper">
+              <button id="logo-size-down" aria-label="缩小站外 Logo" title="缩小">−</button>
+              <output id="logo-size-value">15px</output>
+              <button id="logo-size-up" aria-label="放大站外 Logo" title="放大">＋</button>
+            </div>
+          </div>
+          <div class="library-head"><span>素材库 Logo</span><b id="selected-name">T · 踏青上美团</b></div>
+          <button class="library-summary" id="library-open"><img id="selected-thumb" src="./promo-logos/踏青上美团.png" alt="已选活动 Logo"><span>查看素材库 ›</span></button>
+        </div>
+      </section>
+    </aside>
+  </main>
+  <div class="library-overlay" id="library-overlay" aria-hidden="true">
+    <section class="library-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <header class="modal-titlebar"><div id="modal-title">▧ 素材中心 <small>· Logo</small></div><button class="modal-close" id="modal-close" aria-label="关闭素材库">×</button></header>
+      <div class="modal-toolbar"><input class="modal-search" id="modal-search" type="search" placeholder="搜索素材名称或标签" aria-label="搜索素材"><button class="modal-upload" id="modal-upload">⇧ 上传素材</button></div>
+      <div class="modal-results"><div class="modal-grid" id="modal-grid"></div><div class="modal-empty" id="modal-empty">没有找到匹配的 Logo</div></div>
+      <footer class="modal-footer" id="modal-count">共 12 张素材</footer>
+    </section>
+  </div>
+  <script src="./external-logos/manifest.js?v=20260929-2"></script>
+  <script>
+    const logos=["38节上美团","520礼遇季","618上美团","冰品节","春节大促","配送进校","七夕上美团","情人节上美团","双旦大促","踏青上美团"];
+    const materialCollator=new Intl.Collator("zh-CN",{numeric:true});
+    const builtInInitials={"38节上美团":"S","520礼遇季":"W","618上美团":"L","冰品节":"B","春节大促":"C","美团闪购":"M","美团闪购双11":"M","美团闪购周年庆":"M","配送进校":"P","七夕上美团":"Q","情人节上美团":"Q","双旦大促":"S","踏青上美团":"T","希宝":"X"};
+    const pinyinBoundaries=[["A","阿"],["B","芭"],["C","擦"],["D","搭"],["E","蛾"],["F","发"],["G","噶"],["H","哈"],["J","击"],["K","喀"],["L","拉"],["M","妈"],["N","拿"],["O","哦"],["P","啪"],["Q","七"],["R","然"],["S","撒"],["T","塌"],["W","挖"],["X","昔"],["Y","压"],["Z","匝"]];
+    function initialFor(name){
+      const first=name.trim().charAt(0),latin=first.toUpperCase();
+      if(builtInInitials[name])return builtInInitials[name];
+      if(/[A-Z]/.test(latin))return latin;
+      if(/[0-9]/.test(first))return {0:"L",1:"Y",2:"E",3:"S",4:"S",5:"W",6:"L",7:"Q",8:"B",9:"J"}[first];
+      let initial="Z";
+      for(const [letter,boundary] of pinyinBoundaries){if(materialCollator.compare(first,boundary)>=0)initial=letter}
+      return initial;
+    }
+    const materials=[
+      {id:"builtin:美团闪购",name:"美团闪购",scope:"flash",src:"./meituan-flash-logo.png"},
+      {id:"builtin:美团闪购双11",name:"美团闪购双11",scope:"flash",src:"./promo-logos/美团闪购双11.png"},
+      {id:"builtin:美团闪购周年庆",name:"美团闪购周年庆",scope:"flash",src:"./promo-logos/美团闪购周年庆.png"},
+      ...logos.map(name=>({id:`builtin:${name}`,name,scope:"site",src:`./promo-logos/${name}.png`}))
+    ];
+    function sortMaterials(){materials.sort((a,b)=>initialFor(a.name).localeCompare(initialFor(b.name))||materialCollator.compare(a.name,b.name))}
+    function materialLabel(item){return `${initialFor(item.name)} · ${item.name}`}
+    sortMaterials();
+    const pill=document.querySelector("#logo-pill"),flashLogo=document.querySelector(".flash-logo"),activity=document.querySelector("#activity-logo"),selected=document.querySelector("#selected-name"),overlay=document.querySelector("#library-overlay"),search=document.querySelector("#modal-search"),externalSize=document.querySelector("#external-size"),externalSizeValue=document.querySelector("#logo-size-value");
+    const defaultMaterialId="builtin:踏青上美团",defaultFlashMaterialId="builtin:美团闪购";
+    const selectedByMode={flash:defaultFlashMaterialId,site:defaultMaterialId,external:null};
+    let currentMode="site";
+    try{selectedByMode.flash=localStorage.getItem("selectedLogoMaterial:flash")||defaultFlashMaterialId;selectedByMode.site=localStorage.getItem("selectedLogoMaterial:site")||localStorage.getItem("selectedLogoMaterial")||defaultMaterialId;selectedByMode.external=localStorage.getItem("selectedLogoMaterial:external")}catch{}
+    function upsertMaterial(item){
+      const index=materials.findIndex(entry=>entry.scope===item.scope&&materialCollator.compare(entry.name,item.name)===0);
+      if(index<0){materials.push(item);return item}
+      const existing=materials[index];
+      if(existing.uploaded&&!item.uploaded){if(selectedByMode[item.scope]===item.id)selectedByMode[item.scope]=existing.id;return existing}
+      materials.splice(index,1,item);
+      if(selectedByMode[item.scope]===existing.id)selectedByMode[item.scope]=item.id;
+      return item;
+    }
+    function externalLogoHeight(){
+      const id=selectedByMode.external;
+      if(!id)return 15;
+      let value=15;
+      try{value=Number(localStorage.getItem(`externalLogoHeight:${id}`))||15}catch{}
+      return Math.min(18,Math.max(10,value));
+    }
+    function updateExternalSizeControls(){
+      externalSize.hidden=currentMode!=="external";
+      externalSizeValue.textContent=`${externalLogoHeight()}px`;
+    }
+    function fitVisibleLogo(image,targetHeight,targetWidth){
+      if(!image.naturalWidth||!image.naturalHeight)return;
+      const canvas=document.createElement("canvas"),scale=Math.min(1,640/Math.max(image.naturalWidth,image.naturalHeight));canvas.width=Math.max(1,Math.round(image.naturalWidth*scale));canvas.height=Math.max(1,Math.round(image.naturalHeight*scale));
+      const context=canvas.getContext("2d");context.drawImage(image,0,0,canvas.width,canvas.height);
+      const pixels=context.getImageData(0,0,canvas.width,canvas.height).data;
+      let transparentPixels=0;
+      for(let index=3;index<pixels.length;index+=4){if(pixels[index]<245)transparentPixels++}
+      const transparent=transparentPixels>canvas.width*canvas.height*.01;
+      const corners=[[0,0],[canvas.width-1,0],[0,canvas.height-1],[canvas.width-1,canvas.height-1]];
+      const background=[0,1,2].map(channel=>corners.reduce((sum,[x,y])=>sum+pixels[(y*canvas.width+x)*4+channel],0)/4);
+      let left=canvas.width,right=-1,top=canvas.height,bottom=-1;
+      for(let y=0;y<canvas.height;y++)for(let x=0;x<canvas.width;x++){
+        const index=(y*canvas.width+x)*4,alpha=pixels[index+3];
+        const distance=Math.abs(pixels[index]-background[0])+Math.abs(pixels[index+1]-background[1])+Math.abs(pixels[index+2]-background[2]);
+        if(transparent?alpha>48:distance>42){left=Math.min(left,x);right=Math.max(right,x);top=Math.min(top,y);bottom=Math.max(bottom,y)}
+      }
+      if(right<left||bottom<top){left=0;right=canvas.width-1;top=0;bottom=canvas.height-1}
+      left=Math.max(0,left-1);right=Math.min(canvas.width-1,right+1);top=Math.max(0,top-1);bottom=Math.min(canvas.height-1,bottom+1);
+      const visibleWidth=right-left+1,visibleHeight=bottom-top+1;
+      const displayScale=Math.min(targetWidth/visibleWidth,targetHeight/visibleHeight);
+      image.style.width=`${canvas.width*displayScale}px`;
+      image.style.height=`${canvas.height*displayScale}px`;
+      image.style.clipPath=`inset(${top*displayScale}px ${(canvas.width-right-1)*displayScale}px ${(canvas.height-bottom-1)*displayScale}px ${left*displayScale}px)`;
+      image.style.margin=`-${top*displayScale}px -${(canvas.width-right-1)*displayScale}px -${(canvas.height-bottom-1)*displayScale}px -${left*displayScale}px`;
+    }
+    function sizeActivityLogo(){
+      if(activity.currentSrc!==activity.dataset.expectedSource)return;
+      fitVisibleLogo(activity,currentMode==="external"?externalLogoHeight():15.4,currentMode==="external"?180:160);
+    }
+    activity.addEventListener("load",sizeActivityLogo);
+    if(activity.complete)sizeActivityLogo();
+    function showCurrentMaterial(){
+      const fallbackId=currentMode==="flash"?defaultFlashMaterialId:currentMode==="site"?defaultMaterialId:null;
+      const item=materials.find(entry=>entry.scope===currentMode&&entry.id===selectedByMode[currentMode])||(fallbackId?materials.find(entry=>entry.id===fallbackId):null);
+      pill.classList.toggle("awaiting-external",currentMode==="external"&&!item);
+      const thumb=document.querySelector("#selected-thumb");
+      if(item){
+        flashLogo.src=currentMode==="flash"?item.src:"./meituan-flash-logo.png";
+        activity.dataset.materialSource=item.src;activity.dataset.expectedSource=new URL(item.src,location.href).href;
+        if(currentMode!=="flash")activity.src=item.src;
+        selected.textContent=materialLabel(item);thumb.src=item.src;thumb.hidden=false;
+      }
+      else if(currentMode==="external"){selected.textContent="待上传站外 Logo";thumb.hidden=true}
+      document.querySelector("#library-tab").classList.toggle("active",!!item);
+      document.querySelector("#upload-tab").classList.toggle("active",!item);
+      updateExternalSizeControls();
+      if(item&&currentMode==="external"&&activity.complete)requestAnimationFrame(sizeActivityLogo);
+    }
+    function selectMaterial(item){
+      if(item.scope!==currentMode)return;
+      selectedByMode[currentMode]=item.id;
+      showCurrentMaterial();
+      try{localStorage.setItem(`selectedLogoMaterial:${currentMode}`,item.id)}catch{}
+    }
+    showCurrentMaterial();
+    function openMaterialDb(){return new Promise((resolve,reject)=>{const request=indexedDB.open("logo-material-library",1);request.onupgradeneeded=()=>request.result.createObjectStore("logos",{keyPath:"id"});request.onsuccess=()=>resolve(request.result);request.onerror=()=>reject(request.error)})}
+    async function saveUploadedMaterial(item,file){const db=await openMaterialDb();return new Promise((resolve,reject)=>{const transaction=db.transaction("logos","readwrite"),store=transaction.objectStore("logos"),request=store.getAll();request.onsuccess=()=>{for(const saved of request.result)if(saved.scope===item.scope&&materialCollator.compare(saved.name,item.name)===0&&saved.id!==item.id)store.delete(saved.id);store.put({id:item.id,name:item.name,scope:item.scope,file})};transaction.oncomplete=()=>{db.close();resolve()};transaction.onerror=()=>{db.close();reject(transaction.error)}})}
+    function validateExternalUpload(file){
+      return new Promise(resolve=>{
+        const url=URL.createObjectURL(file),image=new Image();
+        image.onload=()=>{
+          const ratio=image.naturalWidth/image.naturalHeight;
+          const allowedShape=ratio>=1.8||(ratio>=.8&&ratio<=1.35);
+          const clearEnough=image.naturalWidth>=160&&image.naturalHeight>=80;
+          URL.revokeObjectURL(url);
+          resolve(allowedShape&&clearEnough);
+        };
+        image.onerror=()=>{URL.revokeObjectURL(url);resolve(false)};
+        image.src=url;
+      });
+    }
+    async function loadUploadedMaterials(){const db=await openMaterialDb();const saved=await new Promise((resolve,reject)=>{const request=db.transaction("logos","readonly").objectStore("logos").getAll();request.onsuccess=()=>resolve(request.result);request.onerror=()=>reject(request.error)});db.close();for(const item of saved){if(item.scope==="external"&&!(await validateExternalUpload(item.file)))continue;upsertMaterial({id:item.id,name:item.name,scope:item.scope||"site",src:URL.createObjectURL(item.file),uploaded:true})}sortMaterials();showCurrentMaterial();if(overlay.classList.contains("open"))renderMaterials()}
+    async function loadExternalMaterials(){
+      let files=window.EXTERNAL_LOGOS;
+      if(!Array.isArray(files)){
+        const response=await fetch("./external-logos/manifest.json?v=20260929-2");
+        if(!response.ok)throw new Error("站外素材清单加载失败");
+        files=await response.json();
+      }
+      for(const file of files)upsertMaterial({id:`external:${file.file}`,name:file.name,scope:"external",src:file.src||`./external-logos/${encodeURIComponent(file.file)}?v=20260929-2`});
+      sortMaterials();
+      if(!materials.some(item=>item.scope==="external"&&item.id===selectedByMode.external)){
+        selectedByMode.external=materials.find(item=>item.scope==="external")?.id||null;
+        if(selectedByMode.external)try{localStorage.setItem("selectedLogoMaterial:external",selectedByMode.external)}catch{}
+      }
+      if(currentMode==="external")showCurrentMaterial();
+      if(overlay.classList.contains("open"))renderMaterials();
+    }
+    loadUploadedMaterials().catch(()=>{}).finally(()=>loadExternalMaterials().catch(()=>{}));
+    function renderMaterials(){
+      const query=search.value.trim().toLowerCase(),matches=materials.filter(item=>item.scope===currentMode&&(item.name.toLowerCase().includes(query)||materialLabel(item).toLowerCase().startsWith(query))),grid=document.querySelector("#modal-grid");
+      grid.replaceChildren();
+      matches.forEach(item=>{const card=document.createElement("button"),visual=document.createElement("span"),image=document.createElement("img"),label=document.createElement("span");card.className=`material-card ${item.id===selectedByMode[currentMode]?"selected":""}`;card.dataset.id=item.id;card.setAttribute("aria-label",`选择${materialLabel(item)}`);visual.className="material-image";image.addEventListener("load",()=>fitVisibleLogo(image,70,160));image.src=item.src;image.alt="";label.className="material-name";label.textContent=materialLabel(item);visual.append(image);card.append(visual,label);grid.append(card)});
+      document.querySelector("#modal-empty").style.display=matches.length?"none":"block";
+      document.querySelector("#modal-empty").textContent=!query&&currentMode==="external"?"暂无站外 Logo，可上传素材":"没有找到匹配的 Logo";
+      document.querySelector("#modal-count").textContent=`共 ${matches.length} 张素材`;
+    }
+    function closeLibrary(){overlay.classList.remove("open");overlay.setAttribute("aria-hidden","true");document.querySelector("#library-open").focus()}
+    function openLibrary(){search.value="";renderMaterials();overlay.classList.add("open");overlay.setAttribute("aria-hidden","false");search.focus()}
+    document.querySelector("#switch").addEventListener("click",e=>{e.currentTarget.classList.toggle("on");pill.style.display=e.currentTarget.classList.contains("on")?"inline-flex":"none"});
+    document.querySelector("#preview-zoom").addEventListener("click",event=>{
+      const button=event.target.closest("button[data-scale]");
+      if(!button)return;
+      pill.style.setProperty("--preview-scale",button.dataset.scale);
+      document.querySelectorAll("#preview-zoom button").forEach(item=>item.classList.toggle("active",item===button));
+    });
+    document.querySelectorAll(".placement button[data-place]").forEach(btn=>btn.addEventListener("click",()=>{
+      const mode=btn.dataset.place;
+      currentMode=mode;
+      document.querySelectorAll(".placement button").forEach(x=>x.classList.toggle("active",x===btn));
+      pill.dataset.mode=mode;
+      document.querySelector("#logo-controls").hidden=false;
+      document.querySelector("#placement-label").textContent=({flash:"闪购⌄",site:"站内⌄",external:"站外⌄"})[mode];
+      showCurrentMaterial();
+    }));
+    function changeExternalLogoSize(delta){
+      if(currentMode!=="external"||!selectedByMode.external)return;
+      const value=Math.min(18,Math.max(10,externalLogoHeight()+delta));
+      try{localStorage.setItem(`externalLogoHeight:${selectedByMode.external}`,String(value))}catch{}
+      updateExternalSizeControls();
+      sizeActivityLogo();
+    }
+    document.querySelector("#logo-size-down").addEventListener("click",()=>changeExternalLogoSize(-1));
+    document.querySelector("#logo-size-up").addEventListener("click",()=>changeExternalLogoSize(1));
+    document.querySelector("#library-tab").addEventListener("click",openLibrary);
+    document.querySelector("#library-open").addEventListener("click",openLibrary);
+    document.querySelector("#modal-close").addEventListener("click",closeLibrary);
+    overlay.addEventListener("click",e=>{if(e.target===overlay)closeLibrary()});
+    document.addEventListener("keydown",e=>{if(e.key==="Escape"&&overlay.classList.contains("open"))closeLibrary()});
+    search.addEventListener("input",renderMaterials);
+    document.querySelector("#modal-grid").addEventListener("click",e=>{const btn=e.target.closest("button[data-id]");if(!btn)return;const item=materials.find(x=>x.id===btn.dataset.id);if(!item)return;selectMaterial(item);closeLibrary()});
+    document.querySelector("#upload-tab").addEventListener("click",()=>document.querySelector("#upload").click());
+    document.querySelector("#modal-upload").addEventListener("click",()=>document.querySelector("#upload").click());
+    document.querySelector("#upload").addEventListener("change",async e=>{const file=e.target.files[0];if(!file)return;if(currentMode==="external"&&!(await validateExternalUpload(file))){e.target.value="";alert("站外仅支持清晰的横版 Logo+品牌名，或方形图形 Logo。横版宽高比需至少 1.8:1，方形需接近 1:1，图片尺寸不低于 160×80px。");return}const name=file.name.replace(/\.[^.]+$/,"").trim()||"未命名Logo",item={id:`upload:${currentMode}:${name.toLocaleLowerCase("zh-CN")}`,name,scope:currentMode,src:URL.createObjectURL(file),uploaded:true};upsertMaterial(item);sortMaterials();selectMaterial(item);e.target.value="";closeLibrary();try{await saveUploadedMaterial(item,file)}catch{alert("Logo 已加入当前页面，但未能保存到本地素材库。")}});
+  </script>
+</body>
+</html>
